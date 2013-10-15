@@ -10,10 +10,10 @@
 	
 	<h2>System Manager</h2>
 		<form:form id="system" action="showSystems" method="POST">
-		
-			<table class="table">
+	
+			<table>
 				<tr>
-					<td><span class="label label-success">System ID</span></td>
+					<td><form:label path="id">System ID</form:label></td>
 					<td><form:input path="id" required="required" type="text"/></td>
 				</tr>
 				<tr>

@@ -8,6 +8,12 @@
 </head>
 <body>
 
+<script language="javascript" type="text/javascript">
+   $(function(){
+      alert("My First Jquery Test");
+   });
+</script>
+
 <h1>
 	Software Solutions Issue and Bug Tracker  
 </h1>
@@ -18,17 +24,8 @@
   <ul class="dropdown-menu">
 	<li><a href="addSystem">Add New System</a></li>
 	<li><a href="showSystems">View Systems</a></li>
-	<li><a href="addRelease">Add New System</a></li>
-	<li><a href="showReleases">View Systems</a></li>
-	<li><a href="addReport">Add New System</a></li>
-	<li><a href="showReport">View Systems</a></li>
-	<li><a href="addRevision">Add New System</a></li>
-	<li><a href="showRevisions">View Systems</a></li>
-	<li><a href="addTargetChange">Add New System</a></li>
-	<li><a href="showTargetChanges">View Systems</a></li>
-	<li><a href="addTargetFile">Add New System</a></li>
-	<li><a href="showTargetFile">View Systems</a></li>
 	<li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
   </ul>
 </div>
 

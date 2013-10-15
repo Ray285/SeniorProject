@@ -4,9 +4,9 @@ public class System {
 	
 	private String name;
 	private Integer id;
-	private String vcsUrl;
 	private String issueTrackerUrl;
 	private String programmingLang;
+	private String versionControlUrl;
 	   
 	public void setName(String name) {
 		this.name = name;
@@ -24,14 +24,6 @@ public class System {
 		return id;
 	}
 	
-	public void setVCSUrl(String vcsUrl) {
-		this.vcsUrl = vcsUrl;
-	}
-	
-	public String getVCSUrl() {
-		return vcsUrl;
-	}
-	
 	public void setIssueTrackerUrl(String issueTrackerUrl) {
 		this.issueTrackerUrl = issueTrackerUrl;
 	}
@@ -46,6 +38,14 @@ public class System {
 	
 	public String getProgrammingLang() {
 		return programmingLang;
+	}
+	
+	public void setversionControlUrl(String versionControlUrl) {
+		this.versionControlUrl = versionControlUrl;
+	}
+	
+	public String getversionControlUrl() {
+		return versionControlUrl;
 	}
 
 }
