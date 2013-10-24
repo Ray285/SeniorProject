@@ -9,7 +9,7 @@
 </head>
 <body>	
 	<div class="page-header text-center">
-  		<h1>System Manager</h1>
+  		<h1>Release Manager</h1>
 	</div>
 	<div class="container ">
 		<div class="row span12 well well-lg">
@@ -45,27 +45,18 @@
 					</ul>
 		</div>
     	<div class="row span12 well well-lg">
-				<form:form id="system" action="showSystems" method="POST">	
+				<form:form id="release" action="showReleases" method="POST">	
 					<table class="table well well-lg">
 						<tr>
-							<td><form:label path="name">System ID</form:label></td>
-							<td><form:input path="id" required="required" type="text"/></td>
+							<td><form:label path="system.name">System Name</form:label></td>
+							<td><form:select path="system.name" required="required">
+									<form:option value="">-- Select system</form:option>
+									<form:option value="7">Apache Lucene</form:option><form:option value="8">Hibernate</form:option><form:option value="9">Apache Derby</form:option><form:option value="10">Netbeans - Editor</form:option><form:option value="11">OpenJPA</form:option><form:option value="12">Apache Cocoon</form:option><form:option value="49">PowerPoint</form:option>
+								</form:select> <button class="btn btn-default"> <a href="addSystem"> Add new system</a></button></td>
 						</tr>
 						<tr>
-							<td><form:label path="name">System Name</form:label></td>
-							<td><form:input path="name" required="required" type="text" class="form-control"/></td>
-						</tr>
-						<tr>
-							<td><form:label path="issueTrackerUrl">Issue Tracker URL</form:label></td>
-							<td><form:input path="issueTrackerUrl" required="required" type="text" class="form-control"/></td>
-						</tr>
-						<tr>
-							<td><form:label path="versionControlUrl">Version Control URL</form:label></td>
-							<td><form:input path="versionControlUrl" required="required" type="text" class="form-control"/></td>
-						</tr>
-						<tr>
-							<td><form:label path="programmingLang">Programming Language</form:label></td>
-							<td><form:input path="programmingLang" required="required" type="text" class="form-control"/></td>
+							<td><form:label path="releasename">Release Name</form:label></td>
+							<td><form:input path="releasename" required="required" type="text" class="form-control"/></td>
 						</tr>
 					</table>
 					<input type="submit" class="btn btn-primary" value="Submit"/>

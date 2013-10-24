@@ -7,30 +7,53 @@
 	<title>Home</title>
 </head>
 <body>
+	<div class="page-header text-center">
+	  <h1>Software Solutions Issue and Bug Tracker</h1>
+	</div>
+	<div id="main-content">
+      	<div class="container well well-lg">
+      		 <div class="row">
+      		 	<div class="span12">
+      		 		<ul class="nav nav-tabs well well-lg">
+					  <li><a href="#">Home</a></li>
+					  <li><a href="#">Account</a></li>
+					  <li class="dropdown">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					      Add <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu">
+					    	<li><a href="addSystem">Add New System</a></li>
+							<li><a href="addRelease">Add Release</a></li>
+							<li><a href="addReport">Add Report</a></li>
+							<li><a href="addRevision">Add Revision</a></li>
+							<li><a href="addTargetChange">Add Target Change</a></li>
+							<li><a href="addTargetFile">Add Target File</a></li>
+					    </ul>
+					  </li>
+					  <li class="dropdown">
+					  	<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+					      View <span class="caret"></span>
+					    </a>
+					    <ul class="dropdown-menu">
+							<li><a href="showSystems">View Systems</a></li>
+							<li><a href="showReleases">View Releases</a></li>
+							<li><a href="showReports">View Reports</a></li>
+							<li><a href="showRevisions">View Revisions</a></li>
+							<li><a href="showTargetChanges">View Target Changes</a></li>
+							<li><a href="showTargetFile">View Target Files</a></li>
+					    </ul>
+					  </li>
+					</ul>
+				</div>
+      		 </div>
+			 <div class="row">
+				<div class="span12 text-center">
+			    	<h1>Welcome "username"</h1>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<h1>
-	Software Solutions Issue and Bug Tracker  
-</h1>
-<div class="btn-group">
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-    Action <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu">
-	<li><a href="addSystem">Add New System</a></li>
-	<li><a href="showSystems">View Systems</a></li>
-	<li><a href="addRelease">Add New System</a></li>
-	<li><a href="showReleases">View Systems</a></li>
-	<li><a href="addReport">Add New System</a></li>
-	<li><a href="showReport">View Systems</a></li>
-	<li><a href="addRevision">Add New System</a></li>
-	<li><a href="showRevisions">View Systems</a></li>
-	<li><a href="addTargetChange">Add New System</a></li>
-	<li><a href="showTargetChanges">View Systems</a></li>
-	<li><a href="addTargetFile">Add New System</a></li>
-	<li><a href="showTargetFile">View Systems</a></li>
-	<li class="divider"></li>
-  </ul>
-</div>
 
 
 

@@ -5,13 +5,13 @@
 <head>
 	<link href="resources/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
-	<title>System Manager</title>
+	<title>Reports Manager</title>
 </head>
 <body>	
 	<div class="page-header text-center">
-  		<h1>System Manager</h1>
+  		<h1>Reports Manager</h1>
 	</div>
-	<div class="container ">
+	<div class="container">
 		<div class="row span12 well well-lg">
       		 		<ul class="nav nav-tabs well well-lg">
 					  <li><a href="index">Home</a></li>
@@ -45,34 +45,37 @@
 					</ul>
 		</div>
     	<div class="row span12 well well-lg">
-				<form:form id="system" action="showSystems" method="POST">	
+				<form:form id="report" action="showReports" method="POST">
 					<table class="table well well-lg">
 						<tr>
-							<td><form:label path="name">System ID</form:label></td>
-							<td><form:input path="id" required="required" type="text"/></td>
+							<td><form:label path="release">Release Name</form:label></td>
+							<td><form:input path="release" required="required" type="text" class="form-control"/></td>
 						</tr>
 						<tr>
-							<td><form:label path="name">System Name</form:label></td>
-							<td><form:input path="name" required="required" type="text" class="form-control"/></td>
+							<td><form:label path="issueid">Issue Tracker ID</form:label></td>
+							<td><form:input path="issueid" required="required" type="text" class="form-control"/></td>
 						</tr>
 						<tr>
-							<td><form:label path="issueTrackerUrl">Issue Tracker URL</form:label></td>
-							<td><form:input path="issueTrackerUrl" required="required" type="text" class="form-control"/></td>
+							<td><form:label path="title">Title</form:label></td>
+							<td><form:input path="title" required="required" type="text" class="form-control"/></td>
 						</tr>
 						<tr>
-							<td><form:label path="versionControlUrl">Version Control URL</form:label></td>
-							<td><form:input path="versionControlUrl" required="required" type="text" class="form-control"/></td>
-						</tr>
+							<td><form:label path="description">Description</form:label></td>
+							<td><form:input path="description" required="required" type="text" class="form-control"/></td>
+						</tr>					
 						<tr>
-							<td><form:label path="programmingLang">Programming Language</form:label></td>
-							<td><form:input path="programmingLang" required="required" type="text" class="form-control"/></td>
+							<td><form:label path="type">Type</form:label></td>
+							<td><form:select path="type" name="type" required="required">
+									<form:option value="Bug">Bug</form:option>
+									<form:option value="Enhancement" selected="selected">Enhancement</form:option>
+								</form:select>
+							</td>
 						</tr>
 					</table>
 					<input type="submit" class="btn btn-primary" value="Submit"/>
 				</form:form>
 		</div>
 	</div>
-
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="resources/js/jquery-2.0.3.min.js"></script>

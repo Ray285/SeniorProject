@@ -16,20 +16,20 @@
 			        <table class="table well well-lg">
 			          <thead>
 			            <tr>
-			              <th>System ID</th>
-			              <th>System Name</th>
-			              <th>Issue Tracker URL</th>
-			              <th>Version Control URL</th>
-			              <th>Programming Language</th>
+			              <th>Release</th>
+			              <th>Issue Tracker ID</th>
+			         	  <th>Title</th>
+			              <th>Description</th>
+			              <th>Type</th>
 			            </tr>
 			          </thead>
 			          <tbody>
 			            <tr>
-					      <td>${id}</td>
-					      <td>${name}</td>
-					      <td>${issueTrackerUrl}</td>
-					      <td>${versionControlUrl}</td>
-					      <td>${programmingLang}</td>
+					      <td>${release}</td>			          
+					      <td>${issueid}</td>
+					  	  <td>${title}</td>
+					      <td>${description}</td>
+					      <td>${type}</td>
 			            </tr>
 			          </tbody>
 			        </table>
